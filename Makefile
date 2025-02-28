@@ -5,7 +5,7 @@ REQUIREMENTS=requirements.txt
 SOURCE_DIR=model_pipeline.py
 MAIN_SCRIPT=main.py
 TEST_DIR=tests/
-  
+ 
 # Configuration de l'environnement
 setup:
 	@echo "🔧 Création de l'environnement virtuel et installation des dépendances..."
@@ -124,4 +124,9 @@ docker-clean:
 # Automate the full pipeline: Stop → Build → Push → Run
 docker-deploy: docker-stop docker-build docker-push docker-run
 	@echo "🚀 Docker deployment complete!"
+
+# Lancer l'application Streamlit
+run-streamlit:
+	 @echo "🚀 Lancement de l'application Streamlit..."
+	@. $(ENV_NAME)/bin/activate && streamlit run streamlit_app.py
 
