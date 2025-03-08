@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5657762efc2e405a9442aad1a9544339/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5657762efc2e405a9442aad1a9544339
+run_name: intrigued-mule-911
+run_uuid: 5657762efc2e405a9442aad1a9544339
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741218870637
+status: 1
+tags: []
+user_id: fares

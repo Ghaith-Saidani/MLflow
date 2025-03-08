@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/58479fc774bc4503946d3e29714dfd32/artifacts
+end_time: 1741284835303
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 58479fc774bc4503946d3e29714dfd32
+run_name: respected-turtle-538
+run_uuid: 58479fc774bc4503946d3e29714dfd32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741284835283
+status: 3
+tags: []
+user_id: fares

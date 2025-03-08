@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1fda2ed26aee4b4bb98accdff346bb87/artifacts
+end_time: 1740921952706
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1fda2ed26aee4b4bb98accdff346bb87
+run_name: sedate-shrimp-193
+run_uuid: 1fda2ed26aee4b4bb98accdff346bb87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740921948530
+status: 3
+tags: []
+user_id: fares

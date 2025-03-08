@@ -10,18 +10,23 @@ COPY requirements.txt /app/
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install MLflow
+RUN pip install mlflow
+
+# Install Elasticsearch Python client
+RUN pip install elasticsearch
+
 # Copy the entire project into the container (excluding files in .dockerignore)
 COPY . /app/
 
 # Copy model and preprocessing files explicitly
 COPY model.pkl scaler.pkl pca.pkl /app/
 
-# Expose FastAPI port
-EXPOSE 8000
+# Expose FastAPI port and MLflow UI port
+EXPOSE 8000 5000
 
 # Set environment variables for MLflow tracking
 ENV MLFLOW_TRACKING_URI sqlite:///mlflow.db
 
-# Start FastAPI using Uvicorn
+# Start FastAPI directly (adjust according to your project setup)
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
-

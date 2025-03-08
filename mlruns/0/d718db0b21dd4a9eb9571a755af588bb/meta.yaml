@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d718db0b21dd4a9eb9571a755af588bb/artifacts
+end_time: 1741300808841
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d718db0b21dd4a9eb9571a755af588bb
+run_name: rare-vole-569
+run_uuid: d718db0b21dd4a9eb9571a755af588bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741300808818
+status: 3
+tags: []
+user_id: fares

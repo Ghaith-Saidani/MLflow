@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b5f4fb37a0ff4075a22fdc0b7f549e19/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b5f4fb37a0ff4075a22fdc0b7f549e19
+run_name: tasteful-snipe-103
+run_uuid: b5f4fb37a0ff4075a22fdc0b7f549e19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741219309989
+status: 1
+tags: []
+user_id: fares

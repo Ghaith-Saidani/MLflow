@@ -1,11 +1,5 @@
-"""
-This module provides the main CLI entry point for the ML pipeline.
-It includes functions to prepare data, train a model, and evaluate it.
-"""
-
 import os
 import sys
-
 import argparse
 import joblib
 import mlflow
@@ -19,6 +13,7 @@ from model_pipeline import (
     load_model,
 )
 from sklearn.model_selection import train_test_split
+from mlflow.tracking import MlflowClient  # Add this import
 
 # ✅ Set MLflow Tracking URI
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
@@ -26,6 +21,20 @@ mlflow.set_tracking_uri("http://127.0.0.1:5000")
 # ✅ Define a local folder for storing artifacts
 ARTIFACTS_DIR = "mlartifacts"
 os.makedirs(ARTIFACTS_DIR, exist_ok=True)  # Ensure directory exists
+
+def register_model(model_name, model_uri):
+    """Function to register the model in MLflow Registry"""
+    client = MlflowClient()
+    try:
+        # Register the model version if it doesn't already exist
+        client.create_registered_model(model_name)
+        print(f"✅ Registered model {model_name} in MLflow Model Registry.")
+    except mlflow.exceptions.MlflowException:
+        print(f"⚠️ Model {model_name} is already registered.")
+
+    # Register the version of the model
+    model_version = client.create_model_version(model_name, model_uri, "")
+    print(f"✅ Model version {model_version.version} created for {model_name}")
 
 
 def main():
@@ -50,6 +59,22 @@ def main():
         joblib.dump(y_processed, os.path.join(ARTIFACTS_DIR, "y_processed.pkl"))
         joblib.dump(scaler, os.path.join(ARTIFACTS_DIR, "scaler.pkl"))
         joblib.dump(pca, os.path.join(ARTIFACTS_DIR, "pca.pkl"))
+
+        # ✅ Log to MLflow
+        with mlflow.start_run():
+            # Log parameters
+            mlflow.log_param("standardization", True)
+            mlflow.log_param("pca_components", pca.n_components_)
+
+            # Log metrics
+            mlflow.log_metric("X_processed_shape_rows", X_processed.shape[0])
+            mlflow.log_metric("X_processed_shape_cols", X_processed.shape[1])
+
+            # Log artifacts
+            mlflow.log_artifact(os.path.join(ARTIFACTS_DIR, "X_processed.pkl"))
+            mlflow.log_artifact(os.path.join(ARTIFACTS_DIR, "y_processed.pkl"))
+            mlflow.log_artifact(os.path.join(ARTIFACTS_DIR, "scaler.pkl"))
+            mlflow.log_artifact(os.path.join(ARTIFACTS_DIR, "pca.pkl"))
 
         print("✅ Données préparées et enregistrées avec succès !")
 
@@ -89,7 +114,12 @@ def main():
                 input_example=input_example,
             )
 
-            print("✅ Modèle entraîné et enregistré dans MLflow")
+            # ✅ Register model in MLflow registry
+            model_name = "random_forest_model"
+            model_uri = f"runs:/{mlflow.active_run().info.run_id}/mlartifacts/random_forest_model"
+            register_model(model_name, model_uri)
+
+            print("✅ Modèle entraîné, enregistré et enregistré dans le registre MLflow")
 
     if args.evaluate:
         print("📊 Évaluation du modèle...")
@@ -108,7 +138,7 @@ def main():
             model, _, _ = load_model()
             print("✅ Model loaded successfully!")
         except FileNotFoundError:
-            print("❌ Error: Trained model file not found. Run `make train` first.")
+            print("❌ Error: Trained model file not found. Run make train first.")
             return
 
         with mlflow.start_run():

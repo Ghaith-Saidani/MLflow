@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/de0e904d461c4d66b6dea4b2b785cd69/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: de0e904d461c4d66b6dea4b2b785cd69
+run_name: dapper-hare-585
+run_uuid: de0e904d461c4d66b6dea4b2b785cd69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741218776765
+status: 1
+tags: []
+user_id: fares

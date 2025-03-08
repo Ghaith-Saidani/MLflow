@@ -1,0 +1,17 @@
+{
+	"ulid": "01JNPM4D539ZSRY9RNN679EXET",
+	"minTime": 1741284010261,
+	"maxTime": 1741291200000,
+	"stats": {
+		"numSamples": 880320,
+		"numSeries": 1834,
+		"numChunks": 7336
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JNPM4D539ZSRY9RNN679EXET"
+		]
+	},
+	"version": 1
+}

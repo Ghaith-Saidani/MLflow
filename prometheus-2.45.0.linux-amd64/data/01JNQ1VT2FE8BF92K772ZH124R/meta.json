@@ -1,0 +1,17 @@
+{
+	"ulid": "01JNQ1VT2FE8BF92K772ZH124R",
+	"minTime": 1741298406117,
+	"maxTime": 1741305600000,
+	"stats": {
+		"numSamples": 515866,
+		"numSeries": 1703,
+		"numChunks": 3406
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JNQ1VT2FE8BF92K772ZH124R"
+		]
+	},
+	"version": 1
+}

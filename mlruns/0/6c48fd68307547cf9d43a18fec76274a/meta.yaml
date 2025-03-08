@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/6c48fd68307547cf9d43a18fec76274a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6c48fd68307547cf9d43a18fec76274a
+run_name: masked-bass-522
+run_uuid: 6c48fd68307547cf9d43a18fec76274a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741218070956
+status: 1
+tags: []
+user_id: fares

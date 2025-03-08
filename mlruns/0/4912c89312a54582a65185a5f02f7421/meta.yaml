@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4912c89312a54582a65185a5f02f7421/artifacts
+end_time: 1740923196796
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4912c89312a54582a65185a5f02f7421
+run_name: abrasive-foal-305
+run_uuid: 4912c89312a54582a65185a5f02f7421
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740923193189
+status: 3
+tags: []
+user_id: fares
