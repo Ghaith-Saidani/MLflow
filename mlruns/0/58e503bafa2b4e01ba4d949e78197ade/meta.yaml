@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/58e503bafa2b4e01ba4d949e78197ade/artifacts
+end_time: 1747072465254
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 58e503bafa2b4e01ba4d949e78197ade
+run_name: charming-asp-849
+run_uuid: 58e503bafa2b4e01ba4d949e78197ade
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747072465235
+status: 3
+tags: []
+user_id: ghaith

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/dff23c6443db4279ae47cf61aa934dd3/artifacts
+deleted_time: 1747070085598
 end_time: 1740923202586
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: dff23c6443db4279ae47cf61aa934dd3
 run_name: mysterious-jay-274
 run_uuid: dff23c6443db4279ae47cf61aa934dd3

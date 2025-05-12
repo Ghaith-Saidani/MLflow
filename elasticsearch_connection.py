@@ -5,8 +5,8 @@ from datetime import datetime
 
 # Connect to Elasticsearch with authentication
 es = Elasticsearch(
-    [{'host': 'localhost', 'port': 9200, 'scheme': 'http'}],
-    basic_auth=('elastic', 'MyS3cureP@ssw0rd2025!')
+    [{"host": "localhost", "port": 9200, "scheme": "http"}],
+    basic_auth=("elastic", "MyS3cureP@ssw0rd2025!"),
 )
 
 # Check if Elasticsearch is reachable
@@ -24,11 +24,11 @@ except Exception as e:
 
 
 # Function to log MLflow events to Elasticsearch
-def log_to_elasticsearch(log_message, log_level='INFO'):
+def log_to_elasticsearch(log_message, log_level="INFO"):
     log = {
         "@timestamp": datetime.utcnow(),
         "log_level": log_level,
-        "message": log_message
+        "message": log_message,
     }
 
     # Send the log to Elasticsearch
@@ -48,5 +48,5 @@ logger.setLevel(logging.INFO)
 logger.info("MLflow logger is successfully configured.")
 
 # Example usage: Log an MLflow metric and log a message
-mlflow.log_metric('example_metric', 1.23)
+mlflow.log_metric("example_metric", 1.23)
 log_to_elasticsearch("This is a test log message from MLflow.")

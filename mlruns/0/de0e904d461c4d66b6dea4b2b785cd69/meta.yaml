@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/de0e904d461c4d66b6dea4b2b785cd69/artifacts
+deleted_time: 1747070033859
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: de0e904d461c4d66b6dea4b2b785cd69
 run_name: dapper-hare-585
 run_uuid: de0e904d461c4d66b6dea4b2b785cd69

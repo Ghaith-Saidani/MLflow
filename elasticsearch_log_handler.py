@@ -2,6 +2,7 @@ import logging
 from elasticsearch import Elasticsearch
 from logging import Handler
 
+
 class ElasticsearchHandler(Handler):
     def __init__(self, es_client, index_name="mlflow_logs"):
         self.es_client = es_client
@@ -14,5 +15,3 @@ class ElasticsearchHandler(Handler):
             self.es_client.index(index=self.index_name, document={"log": log_entry})
         except Exception as e:
             print(f"Error sending log to Elasticsearch: {e}")
-
-

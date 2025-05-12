@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/3771d3e8e839496eb98cf05d3f125562/artifacts
+deleted_time: 1747070033859
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 3771d3e8e839496eb98cf05d3f125562
 run_name: agreeable-cub-260
 run_uuid: 3771d3e8e839496eb98cf05d3f125562

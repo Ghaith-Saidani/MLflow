@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/feb572b79e224713a20350ea60afd095/artifacts
+deleted_time: 1747070085597
 end_time: 1740923160190
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: feb572b79e224713a20350ea60afd095
 run_name: marvelous-yak-356
 run_uuid: feb572b79e224713a20350ea60afd095

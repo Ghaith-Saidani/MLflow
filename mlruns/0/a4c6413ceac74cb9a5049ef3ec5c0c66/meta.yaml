@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a4c6413ceac74cb9a5049ef3ec5c0c66/artifacts
+end_time: 1747078795476
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4c6413ceac74cb9a5049ef3ec5c0c66
+run_name: incongruous-asp-50
+run_uuid: a4c6413ceac74cb9a5049ef3ec5c0c66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747078791625
+status: 3
+tags: []
+user_id: ghaith

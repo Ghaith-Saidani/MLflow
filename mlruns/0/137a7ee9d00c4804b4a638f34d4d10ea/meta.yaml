@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/137a7ee9d00c4804b4a638f34d4d10ea/artifacts
+end_time: 1747070276358
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 137a7ee9d00c4804b4a638f34d4d10ea
+run_name: spiffy-crab-816
+run_uuid: 137a7ee9d00c4804b4a638f34d4d10ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747070276347
+status: 3
+tags: []
+user_id: ghaith

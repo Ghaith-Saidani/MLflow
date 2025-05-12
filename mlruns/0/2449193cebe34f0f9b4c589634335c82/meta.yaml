@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/2449193cebe34f0f9b4c589634335c82/artifacts
+deleted_time: 1747070034195
 end_time: 1741217814333
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 2449193cebe34f0f9b4c589634335c82
 run_name: sincere-snipe-886
 run_uuid: 2449193cebe34f0f9b4c589634335c82

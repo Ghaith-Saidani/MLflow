@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ba042b031dd34ac8b5a619362eca08ff/artifacts
+end_time: 1747079015111
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ba042b031dd34ac8b5a619362eca08ff
+run_name: caring-shrimp-698
+run_uuid: ba042b031dd34ac8b5a619362eca08ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747079015094
+status: 3
+tags: []
+user_id: ghaith

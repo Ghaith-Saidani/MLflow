@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/51d8fa18dbec4dc89bc24afa9bdaf642/artifacts
+deleted_time: 1747070033525
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 51d8fa18dbec4dc89bc24afa9bdaf642
 run_name: bright-pig-225
 run_uuid: 51d8fa18dbec4dc89bc24afa9bdaf642

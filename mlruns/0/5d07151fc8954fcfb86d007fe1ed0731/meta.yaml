@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5d07151fc8954fcfb86d007fe1ed0731/artifacts
+end_time: 1746992941429
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5d07151fc8954fcfb86d007fe1ed0731
+run_name: traveling-grouse-372
+run_uuid: 5d07151fc8954fcfb86d007fe1ed0731
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746992941387
+status: 3
+tags: []
+user_id: ghaith

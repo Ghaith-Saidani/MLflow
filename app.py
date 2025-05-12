@@ -29,10 +29,15 @@ except FileNotFoundError:
     print("❌ Model files not found. Ensure the training pipeline has been executed.")
 
 # Database setup - Using SQLite instead of PostgreSQL
-DATABASE_URL = "sqlite:///./db.sqlite"  # SQLite URL, replace with correct file path if needed
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})  # Added `check_same_thread` for SQLite
+DATABASE_URL = (
+    "sqlite:///./db.sqlite"  # SQLite URL, replace with correct file path if needed
+)
+engine = create_engine(
+    DATABASE_URL, connect_args={"check_same_thread": False}
+)  # Added `check_same_thread` for SQLite
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
+
 
 # Define PredictionResult model
 class PredictionResult(Base):
@@ -43,6 +48,7 @@ class PredictionResult(Base):
     features = Column(String)
     created_at = Column(DateTime, default=datetime.utcnow)
 
+
 # Create the tables
 Base.metadata.create_all(bind=engine)
 
@@ -52,6 +58,7 @@ app = FastAPI(
     description="API for predicting customer churn based on input features.",
     version="1.0.0",
 )
+
 
 # Input schema
 class InputData(BaseModel):
@@ -75,10 +82,12 @@ class InputData(BaseModel):
     Extra_Feature_2: float = Field(..., example=18.0)
     Extra_Feature_3: float = Field(..., example=19.0)
 
+
 # Response schema
 class PredictionResponse(BaseModel):
     prediction: int = Field(..., example=1)
     features: Dict[str, float]  # Include features in the response
+
 
 # Dependency to get DB session
 def get_db():
@@ -87,6 +96,7 @@ def get_db():
         yield db
     finally:
         db.close()
+
 
 @app.post("/predict", response_model=PredictionResponse)
 def predict(data: InputData, db: Session = Depends(get_db)):
@@ -102,7 +112,7 @@ def predict(data: InputData, db: Session = Depends(get_db)):
         # Get the prediction
         prediction = model.predict(input_pca)[0]
 
-	# Save prediction result to database
+        # Save prediction result to database
         prediction_result = PredictionResult(
             prediction=int(prediction),
             features=str(input_data),
@@ -111,14 +121,12 @@ def predict(data: InputData, db: Session = Depends(get_db)):
         db.commit()
         db.refresh(prediction_result)
 
-
-       
-
         # Return the prediction and the input features
         return {"prediction": int(prediction), "features": input_data}
 
     except Exception as e:
         return {"error": str(e)}
+
 
 # Custom validation error handler
 @app.exception_handler(RequestValidationError)
@@ -131,11 +139,13 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         },
     )
 
+
 # Retrain endpoint schema
 class Hyperparameters(BaseModel):
     n_estimators: int = Field(100, example=150)
     max_depth: int = Field(10, example=12)
     random_state: int = Field(42, example=42)
+
 
 @app.post("/retrain")
 def retrain(hyperparams: Hyperparameters):
@@ -189,4 +199,3 @@ def retrain(hyperparams: Hyperparameters):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-

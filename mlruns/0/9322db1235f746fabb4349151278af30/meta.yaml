@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/9322db1235f746fabb4349151278af30/artifacts
+end_time: 1747080822474
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9322db1235f746fabb4349151278af30
+run_name: merciful-boar-444
+run_uuid: 9322db1235f746fabb4349151278af30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747080822456
+status: 3
+tags: []
+user_id: ghaith

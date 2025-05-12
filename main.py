@@ -22,6 +22,7 @@ mlflow.set_tracking_uri("http://127.0.0.1:5000")
 ARTIFACTS_DIR = "mlartifacts"
 os.makedirs(ARTIFACTS_DIR, exist_ok=True)  # Ensure directory exists
 
+
 def register_model(model_name, model_uri):
     """Function to register the model in MLflow Registry"""
     client = MlflowClient()
@@ -119,7 +120,9 @@ def main():
             model_uri = f"runs:/{mlflow.active_run().info.run_id}/mlartifacts/random_forest_model"
             register_model(model_name, model_uri)
 
-            print("✅ Modèle entraîné, enregistré et enregistré dans le registre MLflow")
+            print(
+                "✅ Modèle entraîné, enregistré et enregistré dans le registre MLflow"
+            )
 
     if args.evaluate:
         print("📊 Évaluation du modèle...")

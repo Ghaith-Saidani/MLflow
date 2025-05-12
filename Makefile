@@ -1,6 +1,6 @@
 # Déclaration des variables
 PYTHON=python3
-ENV_NAME=venv
+ENV_NAME=venv39
 REQUIREMENTS=requirements.txt
 SOURCE_DIR=model_pipeline.py
 MAIN_SCRIPT=main.py
@@ -63,8 +63,8 @@ reinstall: clean setup
 # Lancer le serveur FastAPI pour tester l'API (Ctrl+C ferme bien le serveur)
 api-test:
 	@echo "🚀 Lancement de l'API FastAPI..."
-	@. $(ENV_NAME)/bin/activate && exec uvicorn app:app --host 127.0.0.1 --port 8000 --reload
-	@echo "🌐 API disponible à l'adresse : http://127.0.0.1:8000/docs"
+	@. $(ENV_NAME)/bin/activate && exec uvicorn app:app --host 127.0.0.1 --port 8001 --reload
+	@echo "🌐 API disponible à l'adresse : http://127.0.0.1:8001/docs"
 	@echo "👉 Ouvrez Swagger UI pour tester l'API."
 
 # Lancer l'interface MLflow UI (Ctrl+C ferme bien le serveur)
@@ -87,7 +87,7 @@ run-all:
 	@echo "🎉 Toute la pipeline + API + MLflow en exécution !"
 
 # Docker Variables
-IMAGE_NAME=fares9494/fastapi-mlops
+IMAGE_NAME=ghaithsaidani221/fastapi-mlops
 CONTAINER_NAME=fastapi-mlops-container
 
 # Build the Docker image

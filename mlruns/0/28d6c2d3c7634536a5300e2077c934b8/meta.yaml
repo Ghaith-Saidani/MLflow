@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/28d6c2d3c7634536a5300e2077c934b8/artifacts
+deleted_time: 1747070033860
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 28d6c2d3c7634536a5300e2077c934b8
 run_name: brawny-kit-572
 run_uuid: 28d6c2d3c7634536a5300e2077c934b8

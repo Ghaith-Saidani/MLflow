@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/4912c89312a54582a65185a5f02f7421/artifacts
+deleted_time: 1747070085597
 end_time: 1740923196796
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4912c89312a54582a65185a5f02f7421
 run_name: abrasive-foal-305
 run_uuid: 4912c89312a54582a65185a5f02f7421

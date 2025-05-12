@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/504558ff6b8348699e95795d73add9ce/artifacts
+end_time: 1747069938680
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 504558ff6b8348699e95795d73add9ce
+run_name: bouncy-mink-315
+run_uuid: 504558ff6b8348699e95795d73add9ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747069934792
+status: 3
+tags: []
+user_id: ghaith

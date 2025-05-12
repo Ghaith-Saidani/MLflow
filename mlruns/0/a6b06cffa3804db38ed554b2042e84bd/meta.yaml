@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a6b06cffa3804db38ed554b2042e84bd/artifacts
+end_time: 1747068672571
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a6b06cffa3804db38ed554b2042e84bd
+run_name: painted-hog-527
+run_uuid: a6b06cffa3804db38ed554b2042e84bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747068672548
+status: 3
+tags: []
+user_id: ghaith

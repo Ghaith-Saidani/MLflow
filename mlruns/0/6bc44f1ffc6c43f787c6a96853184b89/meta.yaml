@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/6bc44f1ffc6c43f787c6a96853184b89/artifacts
+deleted_time: 1747070085264
 end_time: 1738983163867
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 6bc44f1ffc6c43f787c6a96853184b89
 run_name: crawling-moth-115
 run_uuid: 6bc44f1ffc6c43f787c6a96853184b89

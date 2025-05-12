@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/863feacd5ba247c09a65501e52cbf39b/artifacts
+deleted_time: 1747070085268
 end_time: 1738983543260
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 863feacd5ba247c09a65501e52cbf39b
 run_name: peaceful-calf-575
 run_uuid: 863feacd5ba247c09a65501e52cbf39b

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/4a519bfe583444a98131031222e2fc8d/artifacts
+deleted_time: 1747070033528
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4a519bfe583444a98131031222e2fc8d
 run_name: suave-swan-866
 run_uuid: 4a519bfe583444a98131031222e2fc8d

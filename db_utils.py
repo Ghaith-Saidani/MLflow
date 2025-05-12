@@ -2,7 +2,8 @@ import sqlite3
 from datetime import datetime
 
 # Define the SQLite database file
-DB_PATH = 'db.sqlite'  # Use the path relative to the working directory of your app
+DB_PATH = "db.sqlite"  # Use the path relative to the working directory of your app
+
 
 def create_predictions_table():
     """Create a predictions table if it doesn't exist already."""
@@ -30,13 +31,14 @@ def create_predictions_table():
     cursor.close()
     conn.close()
 
+
 def save_prediction(model_name, input_data, predicted_value):
     """Save the prediction result to the SQLite database."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     # Get the current date and time
-    prediction_date = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+    prediction_date = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
     # SQL query to insert the prediction result
     insert_query = """
@@ -45,7 +47,9 @@ def save_prediction(model_name, input_data, predicted_value):
     """
 
     # Execute the insert query
-    cursor.execute(insert_query, (model_name, prediction_date, input_data, predicted_value))
+    cursor.execute(
+        insert_query, (model_name, prediction_date, input_data, predicted_value)
+    )
     conn.commit()
 
     print(f"✅ Prediction result saved to database: {predicted_value}")
@@ -54,6 +58,6 @@ def save_prediction(model_name, input_data, predicted_value):
     cursor.close()
     conn.close()
 
+
 if __name__ == "__main__":
     create_predictions_table()
-

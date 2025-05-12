@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/22c065e7eb4a4f22a33db3cbad33b478/artifacts
+deleted_time: 1747070085266
 end_time: 1738983466659
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 22c065e7eb4a4f22a33db3cbad33b478
 run_name: funny-deer-294
 run_uuid: 22c065e7eb4a4f22a33db3cbad33b478

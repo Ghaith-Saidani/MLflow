@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/71eaa8c4a1034007a4d08eda6daa7876/artifacts
+deleted_time: 1747070085596
 end_time: 1740921971225
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 71eaa8c4a1034007a4d08eda6daa7876
 run_name: sassy-finch-798
 run_uuid: 71eaa8c4a1034007a4d08eda6daa7876

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/b93abe75fc464b85b76ebd57edef5c16/artifacts
+deleted_time: 1747070033531
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b93abe75fc464b85b76ebd57edef5c16
 run_name: fun-mink-868
 run_uuid: b93abe75fc464b85b76ebd57edef5c16

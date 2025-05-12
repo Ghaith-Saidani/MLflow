@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/913341b3ea8f4ad983667a64fffbc9e7/artifacts
+deleted_time: 1747070033531
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 913341b3ea8f4ad983667a64fffbc9e7
 run_name: bright-moth-202
 run_uuid: 913341b3ea8f4ad983667a64fffbc9e7

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/6c48fd68307547cf9d43a18fec76274a/artifacts
+deleted_time: 1747070034191
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 6c48fd68307547cf9d43a18fec76274a
 run_name: masked-bass-522
 run_uuid: 6c48fd68307547cf9d43a18fec76274a

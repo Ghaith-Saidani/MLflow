@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/66b46199bd034edd917853d73de515aa/artifacts
+end_time: 1747078797960
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 66b46199bd034edd917853d73de515aa
+run_name: mysterious-shrew-512
+run_uuid: 66b46199bd034edd917853d73de515aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747078797922
+status: 3
+tags: []
+user_id: ghaith

@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/c3c822284e5b482d8393c4f5539eec9d/artifacts
+deleted_time: 1747070033861
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: c3c822284e5b482d8393c4f5539eec9d
 run_name: bold-fox-117
 run_uuid: c3c822284e5b482d8393c4f5539eec9d

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e622483cf90d4c02a281422134ded547/artifacts
+end_time: 1747078789223
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e622483cf90d4c02a281422134ded547
+run_name: carefree-hog-352
+run_uuid: e622483cf90d4c02a281422134ded547
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747078789171
+status: 3
+tags: []
+user_id: ghaith

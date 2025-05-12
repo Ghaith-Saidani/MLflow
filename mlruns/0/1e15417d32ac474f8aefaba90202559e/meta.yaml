@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1e15417d32ac474f8aefaba90202559e/artifacts
+end_time: 1747078543917
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1e15417d32ac474f8aefaba90202559e
+run_name: placid-snipe-384
+run_uuid: 1e15417d32ac474f8aefaba90202559e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747078543875
+status: 3
+tags: []
+user_id: ghaith

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/9b48a517f4274ccf8196d5e0845e0388/artifacts
+end_time: 1746992950664
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9b48a517f4274ccf8196d5e0845e0388
+run_name: tasteful-zebra-736
+run_uuid: 9b48a517f4274ccf8196d5e0845e0388
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746992950626
+status: 3
+tags: []
+user_id: ghaith

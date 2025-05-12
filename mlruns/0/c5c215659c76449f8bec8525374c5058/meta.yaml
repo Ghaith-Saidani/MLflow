@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/0/c5c215659c76449f8bec8525374c5058/artifacts
+deleted_time: 1747070033863
 end_time: null
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: c5c215659c76449f8bec8525374c5058
 run_name: adorable-eel-96
 run_uuid: c5c215659c76449f8bec8525374c5058
